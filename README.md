@@ -24,7 +24,7 @@ This project provides an automated, production-grade pipeline for parsing Airwor
    Set your API key in the AD_Pipeline.ipynb notebook or as an environment variable.
 
 ## Usage
-   **The pipeline is contained within AD_Pipeline.ipynb. To run:**
+   **The pipeline is contained within Soji_AI_AD_Pipeline.ipynb. To run:**
 
    Ensure your PDF files are in the working directory.
 
