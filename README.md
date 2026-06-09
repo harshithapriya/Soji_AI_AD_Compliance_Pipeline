@@ -26,13 +26,13 @@ This project provides an automated, production-grade pipeline for parsing Airwor
 ## Usage
    **The pipeline is contained within AD_Pipeline.ipynb. To run:**
 
-   **Ensure your PDF files are in the working directory.**
+   Ensure your PDF files are in the working directory.
 
-   **Open the notebook in Jupyter or VS Code.**
+   Open the notebook in Jupyter or VS Code.
 
-   **Execute the cells sequentially. The final cell will output a status table confirming the compliance status of your fleet.**
+   Execute the cells sequentially. The final cell will output a status table confirming the compliance status of your fleet.
 
 ## Engineering Report
-**A comprehensive report covering the architectural approach, technical challenges, and trade-offs is available in REPORT.md.**
+A comprehensive report covering the architectural approach, technical challenges, and trade-offs is available in `REPORT.md`
 
 
