@@ -5,7 +5,7 @@ To solve the AD applicability problem, I designed a **Hybrid Architecture** that
 
 * **Extraction:** I used `PyMuPDF` (`fitz`) to extract raw text from the PDFs.
 * **Structuring:** I passed this text to an LLM (`gemini-3.5-flash`) constrained by a strict Pydantic schema to extract the `affected_models` and `excluded_modifications`.
-* **Evaluation:** The structured JSON was passed to a deterministic, object-oriented Python engine. This engine resolves aircraft through an **Aircraft Taxonomy Graph**—a master data dictionary that maps specific fleet models to their regulatory aliases.
+* **Evaluation:** The structured JSON was passed to a deterministic, object-oriented Python engine. This engine resolves aircraft through an **Aircraft Taxonomy Graph**. This is a master data dictionary that maps specific fleet models to their regulatory aliases.
 
 **Why this method?** Traditional Regex or rule-based parsers fail on regulatory documents because the language varies wildly between authorities. Having previously developed a **Non-Conformity (NC) NLP Pipeline** for parsing fuzzy NC descriptions at Airbus, I applied that same methodology here: using an LLM to normalize unstructured data while keeping the final decision-making logic deterministic. This leverages the LLM for what it does best (reading fuzzy text) while keeping the evaluation process strict, auditable, and safe from LLM hallucinations in boolean logic.
 
